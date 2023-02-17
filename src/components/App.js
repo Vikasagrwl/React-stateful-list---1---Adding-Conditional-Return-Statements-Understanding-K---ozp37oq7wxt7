@@ -44,14 +44,14 @@ const App = () => {
   return (
     <div id="main">
       <select name="" id="" onChange={getMovies}>
-        <option name="year" value="" > </option>
-        <option name="year" value="2018">2018</option>
-        <option name="year" value="2019">2019</option>
-        <option name="year" value="2020">2020</option>
-        <option name="year" value="2021">2021</option>
-        <option name="year" value="2022">2022</option>
+        <option value={null} > </option>
+        <option value="2018">2018</option>
+        <option value="2019">2019</option>
+        <option value="2020">2020</option>
+        <option value="2021">2021</option>
+        <option value="2022">2022</option>
       </select>
-      <p>{text}</p>
+      <div id="selected-year">{text}</div>
       <div>
         <ul>
           {movieList.map((ele, index)=>{
